@@ -54,14 +54,25 @@ const projects = [
     linkedinUrl: 'https://www.linkedin.com/posts/shivam-atulya-889a03277_iot-smarttech-cleanwater-activity-7317183452754112513-qJoe?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEOaQSkB0g0NEiMISa0AXI0y_Wy_u9B7RVQ'
   },
   {
-    id: 'laptop-price',
-    title: 'Laptop Price Prediction',
+    id: 'tata-forage',
+    title: 'Tata Forage Job Simulator',
     category: 'Data Analytics',
-    description: 'An advanced Power BI dashboard predicting market values based on real-time hardware metrics.',
-    tech: ['Power BI', 'Python', 'Pandas'],
-    image: 'https://images.unsplash.com/photo-1759661966728-4a02e3c6ed91?w=800&q=80',
+    description: 'A Power BI dashboard built as part of the Tata Data Analytics virtual job simulation, showcasing data visualization and business insights.',
+    tech: ['Power BI', 'Data Analysis'],
+    image: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&q=80',
     icon: LayoutDashboard,
-    githubUrl: MAIN_GITHUB,
+    githubUrl: 'https://github.com/ShivamAtulya/Tata-Forage-Data-Visualization-Simulation',
+    linkedinUrl: MAIN_LINKEDIN
+  },
+  {
+    id: 'retail-sales',
+    title: 'Retail Sales Profit-loss',
+    category: 'Data Analytics',
+    description: 'A comprehensive Power BI dashboard analyzing retail sales performance with profit-loss tracking and business metrics.',
+    tech: ['Power BI', 'Data Analysis'],
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
+    icon: LayoutDashboard,
+    githubUrl: 'https://github.com/ShivamAtulya/Retail-Sales-Profit-Dashboard-PowerBI',
     linkedinUrl: MAIN_LINKEDIN
   },
   {
@@ -84,17 +95,6 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
     icon: LayoutDashboard,
     githubUrl: 'https://github.com/ShivamAtulya/Data-Analysis-Power-BI-/blob/main/Cookie%20Report.pbix',
-    linkedinUrl: MAIN_LINKEDIN
-  },
-  {
-    id: 'tata-forage',
-    title: 'Tata Forage Job Simulator',
-    category: 'Data Analytics',
-    description: 'A Power BI dashboard built as part of the Tata Data Analytics virtual job simulation, showcasing data visualization and business insights.',
-    tech: ['Power BI', 'Data Analysis'],
-    image: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&q=80',
-    icon: LayoutDashboard,
-    githubUrl: 'https://github.com/ShivamAtulya/Data-Analysis-Power-BI-/blob/main/Tata%20forage.pbix',
     linkedinUrl: MAIN_LINKEDIN
   }
 ];
