@@ -37,18 +37,18 @@ export const Certificates = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-14 text-center"
+          className="mb-10 md:mb-14 text-center px-4 md:px-0"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-5 rounded-full bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20">
-            <Award className="w-4 h-4 text-cyan-400" />
+          <div className="inline-flex items-center gap-2 px-3 md:px-4 py-1.5 mb-4 md:mb-5 rounded-full bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20">
+            <Award className="w-3 md:w-4 h-3 md:h-4 text-cyan-400" />
             <span className="text-xs font-mono text-cyan-400 uppercase tracking-widest">Certifications</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white tracking-tight">
             Licenses & Credentials
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 px-4 md:px-0">
           {certificates.map((cert, index) => (
             <motion.div
               key={cert.id}
@@ -64,7 +64,7 @@ export const Certificates = () => {
 
               <div className="relative bg-[#111] rounded-2xl border border-white/5 overflow-hidden h-full flex flex-col transition-all duration-300 group-hover:border-transparent">
                 {/* Background image */}
-                <div className="relative h-32 overflow-hidden">
+                <div className="relative h-24 md:h-32 overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/70 to-transparent z-10" />
                   <ImageWithFallback
                     src={cert.image}
@@ -73,29 +73,29 @@ export const Certificates = () => {
                   />
                 </div>
 
-                <div className="p-6 pt-0 -mt-6 relative z-20 flex flex-col flex-1">
+                <div className="p-4 md:p-6 pt-0 -mt-4 md:-mt-6 relative z-20 flex flex-col flex-1">
                 {/* Top row: icon + badge */}
-                <div className="flex items-start justify-between mb-5">
-                  <div className={`p-3 rounded-xl bg-gradient-to-br ${cert.accent} shadow-lg`}>
-                    <Award className="w-5 h-5 text-white" />
+                <div className="flex items-start justify-between mb-3 md:mb-5">
+                  <div className={`p-2 md:p-3 rounded-xl bg-gradient-to-br ${cert.accent} shadow-lg`}>
+                    <Award className="w-4 md:w-5 h-4 md:h-5 text-white" />
                   </div>
-                  <span className="text-[10px] font-mono text-gray-500 bg-white/5 px-2.5 py-1 rounded-full">
+                  <span className="text-[10px] font-mono text-gray-500 bg-white/5 px-2 md:px-2.5 py-1 rounded-full">
                     {cert.date}
                   </span>
                 </div>
 
                 {/* Title & issuer */}
-                <h3 className="text-lg font-bold text-white mb-1 tracking-tight leading-snug">
+                <h3 className="text-sm md:text-lg font-bold text-white mb-1 tracking-tight leading-snug">
                   {cert.title}
                 </h3>
-                <p className="text-sm text-gray-500 mb-5 font-mono">{cert.issuer}</p>
+                <p className="text-xs md:text-sm text-gray-500 mb-4 md:mb-5 font-mono">{cert.issuer}</p>
 
                 {/* Skills */}
-                <div className="flex flex-wrap gap-1.5 mb-6">
+                <div className="flex flex-wrap gap-1.5 mb-4 md:mb-6">
                   {cert.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="px-2.5 py-1 bg-white/5 border border-white/10 rounded-md text-[11px] font-mono text-gray-400"
+                      className="px-2 md:px-2.5 py-1 bg-white/5 border border-white/10 rounded-md text-[10px] md:text-[11px] font-mono text-gray-400"
                     >
                       {skill}
                     </span>

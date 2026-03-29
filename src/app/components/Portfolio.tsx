@@ -110,23 +110,23 @@ export const Portfolio = () => {
 
   return (
     <Section id="portfolio" className="bg-[#0f0f11]">
-      <div className="mb-12 md:flex md:items-end md:justify-between">
+      <div className="mb-8 md:mb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">
             Projects
           </h2>
-          <p className="text-gray-400 font-mono text-sm max-w-lg">
+          <p className="text-gray-400 font-mono text-xs md:text-sm max-w-lg">
             A collection of technical experiments, data models, and software solutions.
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-2 mt-6 md:mt-0">
+        <div className="flex flex-wrap gap-2">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setFilter(category)}
               className={cn(
-                "px-4 py-2 rounded-full text-xs font-mono transition-all duration-300",
+                "px-3 md:px-4 py-2 rounded-full text-xs font-mono transition-all duration-300 whitespace-nowrap",
                 filter === category
                   ? "bg-blue-600 text-white"
                   : "bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white"
@@ -138,7 +138,7 @@ export const Portfolio = () => {
         </div>
       </div>
 
-      <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+      <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
         <AnimatePresence>
           {filteredProjects.map((project) => (
             <motion.div
@@ -150,7 +150,7 @@ export const Portfolio = () => {
               key={project.id}
               className="group relative bg-[#111] border border-white/5 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 hover:border-white/20 hover:shadow-[0_8px_40px_rgba(37,99,235,0.15)]"
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-40 md:h-64 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent z-10" />
                 <ImageWithFallback
                   src={project.image}
@@ -159,25 +159,25 @@ export const Portfolio = () => {
                 />
               </div>
 
-              <div className="p-8 relative z-20 -mt-10">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-3 bg-blue-500/10 border border-blue-500/20 rounded-xl shadow-lg backdrop-blur-md">
-                    <project.icon className="w-5 h-5 text-blue-400" />
+              <div className="p-5 md:p-8 relative z-20 -mt-8 md:-mt-10">
+                <div className="flex items-center gap-3 mb-3 md:mb-4">
+                  <div className="p-2 md:p-3 bg-blue-500/10 border border-blue-500/20 rounded-xl shadow-lg backdrop-blur-md">
+                    <project.icon className="w-4 md:w-5 h-4 md:h-5 text-blue-400" />
                   </div>
-                  <h3 className="text-2xl font-bold text-white tracking-tight">
+                  <h3 className="text-lg md:text-2xl font-bold text-white tracking-tight">
                     {project.title}
                   </h3>
                 </div>
                 
-                <p className="text-gray-400 text-sm leading-relaxed mb-6 line-clamp-2 h-10">
+                <p className="text-gray-400 text-xs md:text-sm leading-relaxed mb-4 md:mb-6 line-clamp-2 h-8 md:h-10">
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-4 md:mb-6">
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-xs font-mono text-gray-300"
+                      className="px-2 md:px-3 py-1 bg-white/5 border border-white/10 rounded-md text-xs font-mono text-gray-300"
                     >
                       {tech}
                     </span>

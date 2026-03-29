@@ -16,53 +16,53 @@ export const ResearchPublication = () => {
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto"
       >
-        <div className="flex items-center gap-4 mb-8">
-          <div className="w-12 h-12 bg-violet-500/10 rounded-full flex items-center justify-center">
-            <BookOpen className="w-6 h-6 text-violet-400" />
+        <div className="flex flex-col md:flex-row md:items-center gap-3 md:gap-4 mb-6 md:mb-8 px-4 md:px-0">
+          <div className="w-10 md:w-12 h-10 md:h-12 bg-violet-500/10 rounded-full flex items-center justify-center shrink-0">
+            <BookOpen className="w-5 md:w-6 h-5 md:h-6 text-violet-400" />
           </div>
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white tracking-tight">
               Research Publications
             </h2>
-            <p className="text-gray-400 font-mono text-sm">Investigating tech's impact on society.</p>
+            <p className="text-gray-400 font-mono text-xs md:text-sm">Investigating tech's impact on society.</p>
           </div>
         </div>
 
-        <div className="relative group rounded-3xl border border-white/10 bg-[#111] overflow-hidden">
+        <div className="relative group rounded-3xl border border-white/10 bg-[#111] overflow-hidden mx-4 md:mx-0">
           <div className="absolute top-0 right-0 w-64 h-64 bg-violet-500/10 rounded-bl-[200px] blur-3xl transition-opacity group-hover:opacity-100 opacity-50" />
           
-          <div className="p-8 md:p-12 relative z-10 flex flex-col md:flex-row gap-8 items-start">
-            <Quote className="w-12 h-12 text-violet-400/20 shrink-0 mt-2" />
+          <div className="p-5 md:p-8 lg:p-12 relative z-10 flex flex-col gap-6 md:gap-8 items-start">
+            <Quote className="w-8 md:w-12 h-8 md:h-12 text-violet-400/20 shrink-0 hidden md:block" />
             
-            <div className="flex-1">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 leading-snug">
+            <div className="flex-1 w-full">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-4 md:mb-6 leading-snug">
                 Algorithmic Influences: Analyzing Variations in Youth Mental Health Effects Across Social Media Platforms During & Post-Covid-19
               </h3>
               
-              <div className="flex flex-wrap gap-3 mb-6">
-                <span className="px-3 py-1 bg-violet-500/10 border border-violet-500/20 rounded-md text-xs font-mono text-violet-300">
+              <div className="flex flex-wrap gap-2 md:gap-3 mb-4 md:mb-6">
+                <span className="px-2 md:px-3 py-1 bg-violet-500/10 border border-violet-500/20 rounded-md text-xs font-mono text-violet-300">
                   Data Science
                 </span>
-                <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-xs font-mono text-gray-300">
+                <span className="px-2 md:px-3 py-1 bg-white/5 border border-white/10 rounded-md text-xs font-mono text-gray-300">
                   Psychology
                 </span>
-                <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-xs font-mono text-gray-300">
+                <span className="px-2 md:px-3 py-1 bg-white/5 border border-white/10 rounded-md text-xs font-mono text-gray-300">
                   2025 Publication
                 </span>
               </div>
               
-              <div className="text-gray-400 leading-relaxed mb-8 border-l-2 border-violet-500/30 pl-6 space-y-2">
-                <p className="font-serif italic text-lg opacity-80">
+              <div className="text-gray-400 leading-relaxed mb-6 md:mb-8 border-l-2 border-violet-500/30 pl-4 md:pl-6 space-y-2">
+                <p className="font-serif italic text-sm md:text-base lg:text-lg opacity-80">
                   "Algorithmic Influences: Analyzing Variations in Youth Mental Health Effects Across Social Media Platforms During & Post-Covid-19"
                 </p>
-                <p className="text-sm font-mono text-violet-300/80">Published in IJIRCCE, 2025</p>
-                <p className="text-sm font-mono text-gray-500">Tools: R, Statistical Analysis, Survey Data Analysis</p>
+                <p className="text-xs md:text-sm font-mono text-violet-300/80">Published in IJIRCCE, 2025</p>
+                <p className="text-xs md:text-sm font-mono text-gray-500">Tools: R, Statistical Analysis, Survey Data Analysis</p>
               </div>
               
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-2 md:gap-3">
                 <button
                   onClick={() => setShowPaper(true)}
-                  className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600/20 hover:bg-blue-600/40 text-blue-300 font-medium border border-blue-500/30 transition-all"
+                  className="flex items-center justify-center gap-2 px-4 md:px-5 py-2 md:py-2.5 rounded-xl bg-blue-600/20 hover:bg-blue-600/40 text-blue-300 font-medium border border-blue-500/30 transition-all text-sm"
                 >
                   <Eye className="w-4 h-4" />
                   View Paper
@@ -70,7 +70,7 @@ export const ResearchPublication = () => {
 
                 <button
                   onClick={() => setShowCertificate(true)}
-                  className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-teal-600/20 hover:bg-teal-600/40 text-teal-300 font-medium border border-teal-500/30 transition-all"
+                  className="flex items-center justify-center gap-2 px-4 md:px-5 py-2 md:py-2.5 rounded-xl bg-teal-600/20 hover:bg-teal-600/40 text-teal-300 font-medium border border-teal-500/30 transition-all text-sm"
                 >
                   <Award className="w-4 h-4" />
                   View Certificate

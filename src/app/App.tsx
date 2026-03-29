@@ -34,7 +34,7 @@ export default function App() {
           }}
         >
           <nav
-            className="flex items-center bg-[#0d0d0d] rounded-2xl px-2 py-1"
+            className="flex items-center bg-[#0d0d0d] rounded-2xl px-1 md:px-2 py-1 overflow-x-auto"
             style={{ fontFamily: "'Space Grotesk', sans-serif" }}
           >
             {[
@@ -48,7 +48,7 @@ export default function App() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-[13px] font-semibold tracking-wider uppercase text-gray-400 hover:text-white px-5 py-3 transition-colors duration-200 rounded-xl"
+                className="text-xs md:text-[13px] font-semibold tracking-wider uppercase text-gray-400 hover:text-white px-2 md:px-5 py-2 md:py-3 transition-colors duration-200 rounded-xl whitespace-nowrap"
               >
                 {item.label}
               </a>

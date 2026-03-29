@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Section } from './Section';
-import { Phone, Mail, Github, Linkedin, Instagram, Copy, CheckCircle2 } from 'lucide-react';
+import { Mail, Github, Linkedin, Instagram, Copy, CheckCircle2 } from 'lucide-react';
 
 export const Contact = () => {
   const [copied, setCopied] = useState(false);
@@ -37,19 +37,9 @@ export const Contact = () => {
           </p>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 relative z-10">
-            <a 
-              href="https://wa.me/919431341156"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-8 py-4 rounded-2xl bg-emerald-500 text-white hover:bg-emerald-400 font-semibold transition-all shadow-[0_0_30px_rgba(16,185,129,0.2)]"
-            >
-              <Phone className="w-5 h-5" />
-              WhatsApp
-            </a>
-
             <button 
               onClick={handleCopy}
-              className="flex items-center gap-2 px-8 py-4 rounded-2xl bg-white/5 hover:bg-white/10 text-white font-medium border border-white/10 transition-all backdrop-blur-sm group"
+              className="w-full md:w-auto flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 rounded-2xl bg-white/5 hover:bg-white/10 text-white font-medium border border-white/10 transition-all backdrop-blur-sm group"
             >
               {copied ? <CheckCircle2 className="w-5 h-5 text-teal-400" /> : <Copy className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />}
               <span className="font-mono">{email}</span>

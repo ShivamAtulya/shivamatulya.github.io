@@ -27,7 +27,7 @@ export const SkillCloud = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto px-4 md:px-0">
         {skills.map((skill, index) => (
           <motion.div
             key={skill.name}
@@ -36,13 +36,13 @@ export const SkillCloud = () => {
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
             whileHover={{ y: -5, scale: 1.05 }}
-            className="group relative flex flex-col items-center p-6 bg-[#111] border border-white/5 rounded-2xl cursor-pointer hover:border-white/20 transition-all duration-300"
+            className="group relative flex flex-col items-center p-4 md:p-6 bg-[#111] border border-white/5 rounded-2xl cursor-pointer hover:border-white/20 transition-all duration-300"
           >
             <div className={cn(
-              "w-16 h-16 rounded-2xl flex items-center justify-center mb-4 transition-transform duration-500 group-hover:rotate-[10deg]",
+              "w-12 md:w-16 h-12 md:h-16 rounded-2xl flex items-center justify-center mb-3 md:mb-4 transition-transform duration-500 group-hover:rotate-[10deg]",
               skill.bg
             )}>
-              <skill.icon className={cn("w-8 h-8", skill.color)} />
+              <skill.icon className={cn("w-6 md:w-8 h-6 md:h-8", skill.color)} />
             </div>
             <span className="text-white font-medium tracking-wide">
               {skill.name}

@@ -79,7 +79,7 @@ export const ExperienceTimeline = () => {
           <p className="text-gray-400 font-mono text-sm">Tracing the path of continuous learning and creation.</p>
         </motion.div>
 
-        <div className="relative border-l border-white/10 ml-6 md:ml-12">
+        <div className="relative border-l border-white/10 ml-3 md:ml-6 lg:ml-12 px-3 md:px-0">
           {experiences.map((exp, index) => (
             <motion.div 
               key={index}
@@ -87,7 +87,7 @@ export const ExperienceTimeline = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="mb-12 ml-10 relative group"
+              className="mb-8 md:mb-12 ml-6 md:ml-10 relative group"
             >
               <span className={cn(
                 "absolute -left-[58px] flex items-center justify-center w-10 h-10 rounded-full border-[4px] border-[#0a0a0a]",
@@ -96,7 +96,7 @@ export const ExperienceTimeline = () => {
                 <exp.icon className={cn("w-4 h-4", exp.color)} />
               </span>
               
-              <div className="bg-[#111] p-6 rounded-2xl border border-white/5 shadow-xl transition-all duration-300 group-hover:-translate-y-1 group-hover:border-white/10 group-hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)]">
+              <div className="bg-[#111] p-4 md:p-6 rounded-2xl border border-white/5 shadow-xl transition-all duration-300 group-hover:-translate-y-1 group-hover:border-white/10 group-hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)]">
                 <span className="block mb-2 text-sm font-mono text-gray-500">{exp.year}</span>
                 <h3 className="flex items-center text-lg font-bold text-gray-100 mb-2">
                   {exp.title}

@@ -33,14 +33,14 @@ export const Hero = () => {
         >
           <div>
 
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-4 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-4 leading-tight">
               Hi, I'm <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-teal-400 to-violet-400">
                 shivamatulya
               </span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-400 font-medium font-mono">
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-400 font-medium font-mono">
               Python Developer • Web Developer • Data Analyst • Cloud Service • Design • Leadership
             </p>
           </div>
@@ -50,19 +50,19 @@ export const Hero = () => {
           </p>
 
           {/* BUTTONS */}
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap items-center gap-3 sm:gap-4">
             
-            <a href="#portfolio" className="flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)]">
+            <a href="#portfolio" className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)]">
               View Projects
               <ArrowRight className="w-4 h-4" />
             </a>
 
-            <a href="/Shivam_Atulya_Resume.pdf" download className="flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white font-medium border border-white/10 transition-all backdrop-blur-sm">
+            <a href="/Shivam_Atulya_Resume.pdf" download className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white font-medium border border-white/10 transition-all backdrop-blur-sm">
               <Download className="w-4 h-4" />
               Resume
             </a>
 
-            <a href="#contact" className="flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white font-medium border border-white/10 transition-all backdrop-blur-sm">
+            <a href="#contact" className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white font-medium border border-white/10 transition-all backdrop-blur-sm">
               <Mail className="w-4 h-4" />
               Contact
             </a>
