@@ -90,10 +90,10 @@ export const ExperienceTimeline = () => {
               className="mb-8 md:mb-12 ml-6 md:ml-10 relative group"
             >
               <span className={cn(
-                "absolute -left-[58px] flex items-center justify-center w-10 h-10 rounded-full border-[4px] border-[#0a0a0a]",
+                "absolute -left-[42px] md:-left-[58px] flex items-center justify-center w-8 md:w-10 h-8 md:h-10 rounded-full border-[3px] md:border-[4px] border-[#0a0a0a]",
                 exp.bg
               )}>
-                <exp.icon className={cn("w-4 h-4", exp.color)} />
+                <exp.icon className={cn("w-3.5 md:w-4 h-3.5 md:h-4", exp.color)} />
               </span>
               
               <div className="bg-[#111] p-4 md:p-6 rounded-2xl border border-white/5 shadow-xl transition-all duration-300 group-hover:-translate-y-1 group-hover:border-white/10 group-hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)]">

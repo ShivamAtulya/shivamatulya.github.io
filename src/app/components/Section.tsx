@@ -22,7 +22,7 @@ export const Section = ({ id, children, className, delay = 0 }: SectionProps) =>
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6, delay }}
-      className={cn("py-24 px-6 md:px-12 max-w-7xl mx-auto w-full", className)}
+      className={cn("py-12 md:py-20 lg:py-24 px-4 sm:px-6 md:px-12 max-w-7xl mx-auto w-full", className)}
     >
       {children}
     </motion.section>

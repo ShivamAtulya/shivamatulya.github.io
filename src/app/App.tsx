@@ -28,13 +28,13 @@ export default function App() {
       {/* Navigation - Gradient border navbar */}
       <header className="fixed top-5 left-1/2 -translate-x-1/2 z-50">
         <div
-          className="relative p-[1.5px] rounded-2xl"
+          className="relative p-[1px] rounded-xl md:rounded-2xl"
           style={{
             background: 'linear-gradient(135deg, #06b6d4, #8b5cf6, #3b82f6)',
           }}
         >
           <nav
-            className="flex items-center bg-[#0d0d0d] rounded-2xl px-1 md:px-2 py-1 overflow-x-auto"
+            className="flex items-center bg-[#0d0d0d] rounded-xl md:rounded-2xl px-1 py-1 overflow-x-auto scrollbar-hide"
             style={{ fontFamily: "'Space Grotesk', sans-serif" }}
           >
             {[
@@ -48,7 +48,7 @@ export default function App() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-xs md:text-[13px] font-semibold tracking-wider uppercase text-gray-400 hover:text-white px-2 md:px-5 py-2 md:py-3 transition-colors duration-200 rounded-xl whitespace-nowrap"
+                className="text-[10px] md:text-xs lg:text-[13px] font-semibold tracking-wider uppercase text-gray-400 hover:text-white px-1.5 md:px-3 lg:px-5 py-1.5 md:py-2 lg:py-3 transition-colors duration-200 rounded-lg whitespace-nowrap"
               >
                 {item.label}
               </a>

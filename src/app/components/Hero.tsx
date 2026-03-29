@@ -4,7 +4,7 @@ import { ArrowRight, Download, Mail, Github, Linkedin } from 'lucide-react';
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden w-full pt-20 px-6 md:px-12">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden w-full pt-16 md:pt-20 lg:pt-24 px-4 sm:px-6 md:px-12">
       
       {/* Background glow & Grid */}
       <div className="absolute inset-0 pointer-events-none">
@@ -75,7 +75,7 @@ export const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative h-[500px] w-full hidden lg:flex items-center justify-center"
+          className="relative h-[300px] sm:h-[400px] md:h-[500px] w-full hidden md:flex items-center justify-center"
         >
           
           {/* Outer animated spinning ring */}
